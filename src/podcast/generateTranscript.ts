@@ -46,9 +46,11 @@ The conversation should include:
 - Interesting insights that reflect their distinct personalities
 - A conclusion with their final thoughts
 
-Generate 8-12 dialogue exchanges that sound natural and authentic to each personality.
-
-IMPORTANT: The output MUST use "Host 1" and "Host 2" as speaker names, NOT the actual personality names.
+IMPORTANT RULES:
+1. The output MUST use "Host 1" and "Host 2" as speaker names, NOT the actual personality names.
+2. The hosts should NEVER address each other as "Host 1" or "Host 2" in their dialogue.
+3. Instead, they should speak to each other naturally as if in conversation, using phrases like "you", "I agree", etc.
+4. Generate 8-12 dialogue exchanges that sound natural and authentic to each personality.
 `);
 
 // Get a personality by UID
@@ -85,9 +87,23 @@ export async function createPodcastTranscript(
   // Ensure all speakers are correctly labeled as "Host 1" or "Host 2"
   const correctedDialogue = result.dialogue.map((entry, index) => {
     const isEvenIndex = index % 2 === 0;
+    
+    // Remove any direct addresses like "Host 1" or "Host 2"
+    let text = entry.text;
+    text = text.replace(/Host 1[,\.!\?]?/gi, "");
+    text = text.replace(/Host 2[,\.!\?]?/gi, "");
+    text = text.replace(/Host 1/gi, "you");
+    text = text.replace(/Host 2/gi, "you");
+    
+    // Trim any potential extra spaces and ensure proper capitalization
+    text = text.trim();
+    if (text.length > 0) {
+      text = text.charAt(0).toUpperCase() + text.slice(1);
+    }
+    
     return {
       speaker: isEvenIndex ? "Host 1" : "Host 2",
-      text: entry.text
+      text: text
     };
   });
   

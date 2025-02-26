@@ -1,0 +1,30 @@
+{
+  "name": "ai-podcast-generator",
+  "version": "1.0.0",
+  "description": "Generate podcast transcripts between personalities using AI",
+  "main": "index.js",
+  "scripts": {
+    "test": "ts-node test-podcast.ts",
+    "build": "tsc",
+    "start": "node dist/test-podcast.js"
+  },
+  "keywords": [
+    "ai",
+    "podcast",
+    "langchain",
+    "typescript"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@langchain/core": "^0.1.15",
+    "@langchain/openai": "^0.0.14",
+    "dotenv": "^16.3.1",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+} 
