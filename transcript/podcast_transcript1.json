@@ -1,0 +1,32 @@
+{
+    "dialogue": [
+      {
+        "speaker": "Host 1",
+        "text": "Welcome to The Tech Tomorrow Podcast! Today we're diving into the fascinating world of voice AI and what the future holds."
+      },
+      {
+        "speaker": "Host 2",
+        "text": "And what a topic this is. The technology has come so far from those early days of basic voice commands."
+      },
+      {
+        "speaker": "Host 1",
+        "text": "Remember when we thought it was revolutionary just to ask our phones to set a timer?"
+      },
+      {
+        "speaker": "Host 2",
+        "text": "Now we're having full conversations with AI that can understand context, emotion, and even cultural nuances. It's incredible."
+      },
+      {
+        "speaker": "Host 1",
+        "text": "Though it does raise some interesting questions about privacy and ethics. Where do we draw the line?"
+      },
+      {
+        "speaker": "Host 2",
+        "text": "Exactly. The potential benefits for accessibility and education are huge, but we need to be thoughtful about implementation."
+      },
+      {
+        "speaker": "Host 1",
+        "text": "Well, we'll be exploring all of these aspects today. Stay with us as we break down the future of voice AI."
+      }
+    ]
+  }

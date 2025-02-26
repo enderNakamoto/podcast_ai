@@ -1,0 +1,6 @@
+.env
+node_modules
+/dist
+podcast_env
+.DS_Store
+npm-debug.log
