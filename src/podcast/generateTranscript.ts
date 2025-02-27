@@ -41,16 +41,19 @@ Topic: {topic}
 
 Create a natural, engaging conversation where these two hosts discuss this topic from their unique perspectives. 
 The conversation should include:
-- Their initial thoughts on the topic
+- Their individual thoughts on the topic
 - Areas where they might agree or disagree based on their backgrounds
 - Interesting insights that reflect their distinct personalities
 - A conclusion with their final thoughts
 
 IMPORTANT RULES:
 1. The output MUST use "Host 1" and "Host 2" as speaker names, NOT the actual personality names.
-2. The hosts should NEVER address each other as "Host 1" or "Host 2" in their dialogue.
-3. Instead, they should speak to each other naturally as if in conversation, using phrases like "you", "I agree", etc.
-4. Generate 8-12 dialogue exchanges that sound natural and authentic to each personality.
+2. The hosts should NEVER address each other directly. No "Hey there", "Hello", "Greetings", or any other direct acknowledgment.
+3. NO phrases like "What do you think?", "As you mentioned", or other direct references to the other host.
+4. Each host should simply state their own views and perspectives in response to what was previously said.
+5. The conversation should flow naturally WITHOUT hosts acknowledging each other's presence directly.
+6. Generate 8-12 dialogue exchanges that reflect each personality's unique viewpoint on the topic.
+7. Start the conversation directly with substantive points about the topic, not with introductions or greetings.
 `);
 
 // Get a personality by UID
@@ -84,16 +87,32 @@ export async function createPodcastTranscript(
   // Generate the transcript
   const result = await structuredLlm.invoke(prompt);
   
-  // Ensure all speakers are correctly labeled as "Host 1" or "Host 2"
+  // Post-process dialogue to remove any direct acknowledgments
   const correctedDialogue = result.dialogue.map((entry, index) => {
     const isEvenIndex = index % 2 === 0;
     
-    // Remove any direct addresses like "Host 1" or "Host 2"
+    // Remove any direct addresses, greetings or acknowledgments
     let text = entry.text;
+    
+    // Remove direct addressing patterns
     text = text.replace(/Host 1[,\.!\?]?/gi, "");
     text = text.replace(/Host 2[,\.!\?]?/gi, "");
-    text = text.replace(/Host 1/gi, "you");
-    text = text.replace(/Host 2/gi, "you");
+    text = text.replace(/Hey there[,\.!\?]?/gi, "");
+    text = text.replace(/Hello[,\.!\?]?/gi, "");
+    text = text.replace(/Hi[,\.!\?]?/gi, "");
+    text = text.replace(/Greetings[,\.!\?]?/gi, "");
+    text = text.replace(/Well said[,\.!\?]?/gi, "");
+    text = text.replace(/I agree with you[,\.!\?]?/gi, "I agree");
+    text = text.replace(/As you (mentioned|said|noted)[,\.!\?]?/gi, "");
+    text = text.replace(/What (do you think|are your thoughts)[,\.!\?]?/gi, "");
+    text = text.replace(/To your point[,\.!\?]?/gi, "");
+    text = text.replace(/You're right[,\.!\?]?/gi, "");
+    
+    // Replace "you" with more general terms where possible
+    text = text.replace(/what you are saying/gi, "that perspective");
+    text = text.replace(/your perspective/gi, "that perspective");
+    text = text.replace(/your view/gi, "that view");
+    text = text.replace(/your point/gi, "that point");
     
     // Trim any potential extra spaces and ensure proper capitalization
     text = text.trim();
