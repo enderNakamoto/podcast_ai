@@ -2,7 +2,7 @@
 ---
 
 ## Story Protocol integration
-story agents are here: https://github.com/enderNakamoto/story_podcast_agents
+story agents are here: https://github.com/jsmaxi/story-tssdk-agents
 
 ### IPA IDS:
 
