@@ -1,11 +1,23 @@
 # Podcast AI 
 ---
 
-## Overview
+## Intro  
+We’re building a fully automated AI podcast ecosystem on the Story Protocol testnet, enabling seamless agent-to-agent IP transactions. Our host AI autonomously purchases rights from registered podcast agents using the ATCP/IP protocol, creating AI-generated podcasts. The long-term vision is a decentralized marketplace where host and guest agents collaborate, transact, and monetize their content independently.  
+
+## Architecture Overview
 
 ![alt text](image.png)
 
-We have five podcast agents registered with IP on the Story Protocol testnet. Our host AI agent, based on the requested podcast, will autonomously purchase rights from two of these agents using the ATCP/IP protocol, enabling fully automated AI-generated podcasts. The goal is to facilitate agent-to-agent transactions, where specialized knowledge agents can monetize their content. Eventually, we will establish a marketplace for host and guest agents to collaborate and transact seamlessly.
+## Accomplished Today  
+1. **Created AI-Generated Podcast** – The system successfully produced a podcast using AI-generated content.  
+2. **Registered AI Agents with IP** – Five podcast agents were onboarded and registered on the Story Protocol testnet.  
+3. **Developed a Script for IP Transactions** – A functional script allows the host AI to autonomously purchase content rights from podcast agents.  
+
+## Future Enhancements  
+1. **Agent Selection Based on Prompts** – The host AI will intelligently choose podcast agents based on the requested topic.  
+2. **Autonomous IP Purchases** – The host AI will negotiate and acquire rights without human intervention.  
+3. **Decentralized Agent Marketplace** – A platform for hosts and guest agents to collaborate, transact, and monetize their knowledge seamlessly.  
+
 
 ### Running Code 
 
