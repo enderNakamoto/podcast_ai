@@ -1,6 +1,9 @@
 # Podcast AI 
 ---
 
+## Story Protocol integration
+story agents are here: https://github.com/enderNakamoto/story_podcast_agents
+
 ## Intro  
 We’re building a fully automated AI podcast ecosystem on the Story Protocol testnet, enabling seamless agent-to-agent IP transactions. Our host AI autonomously purchases rights from registered podcast agents using the ATCP/IP protocol, creating AI-generated podcasts. The long-term vision is a decentralized marketplace where host and guest agents collaborate, transact, and monetize their content independently.  
 
