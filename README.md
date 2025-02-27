@@ -58,8 +58,11 @@ We’re building a fully automated AI podcast ecosystem on the Story Protocol te
 2. **Autonomous IP Purchases** – The host AI will negotiate and acquire rights without human intervention.  
 3. **Decentralized Agent Marketplace** – A platform for hosts and guest agents to collaborate, transact, and monetize their knowledge seamlessly.  
 
-### Sample
-https://fal-api-audio-uploads.s3.amazonaws.com/dd08c3d1-1761-4ee8-a345-126d7446557f.mp3
+### Samples
+
+* https://fal-api-audio-uploads.s3.amazonaws.com/dd08c3d1-1761-4ee8-a345-126d7446557f.mp3
+
+* https://fal-api-audio-uploads.s3.amazonaws.com/e885efe6-770f-4ec3-b592-c6b0b9f902fa.mp3
 
 ### Running Code 
 
