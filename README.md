@@ -4,6 +4,43 @@
 ## Story Protocol integration
 story agents are here: https://github.com/enderNakamoto/story_podcast_agents
 
+### IPA IDS:
+
+"0x9174d739d88c1bD5af5e39fd6D0cE81204B9097C"
+
+"0x38058fc7DB15322fA690A36735d84493194d8935"
+
+"0x8fF4a26BBaf488241019f39758B1d33eB46F3969"
+
+"0x00FecB388Cf39F119e78447956cb9d820337c577"
+
+"0x0F60A52Bd8Ee1682C2ff492982ef0488944E5E9C"
+
+### onchain links (testnet):
+
+https://aeneid.explorer.story.foundation/ipa/0x9174d739d88c1bD5af5e39fd6D0cE81204B9097C
+
+https://aeneid.explorer.story.foundation/ipa/0x38058fc7DB15322fA690A36735d84493194d8935
+
+https://aeneid.explorer.story.foundation/ipa/0x8fF4a26BBaf488241019f39758B1d33eB46F3969
+
+https://aeneid.explorer.story.foundation/ipa/0x00FecB388Cf39F119e78447956cb9d820337c577
+
+https://aeneid.explorer.story.foundation/ipa/0x0F60A52Bd8Ee1682C2ff492982ef0488944E5E9C
+
+
+### Characters
+* "Elon Musk", "https://gateway.pinata.cloud/ipfs/bafkreiaazpyxitqf2bvoa3zz74tgh6s5fr6szzeofsftzbl3dnzs453rmq"
+
+* "Albert Einstein", "https://gateway.pinata.cloud/ipfs/bafkreick7tljv7bm7nyiz6dhgpq2elc3wsm44e35jd2zuyasqrw7i6f6m4"
+
+* "Mahatma Gandhi", "https://gateway.pinata.cloud/ipfs/bafkreigl7gsn3hewxn3sjhnredyklyrv4dfc74nkw6b2krgs4mytearswi"
+
+* "Dalai Lama", "https://gateway.pinata.cloud/ipfs/bafkreicvottajszrx3skr4kvykeoj7tx5bstaghnh4syjaeqfve4wpvhne"
+
+* "Genghis Khan", "https://gateway.pinata.cloud/ipfs/bafkreie7srew6aemcet6ykrzu6gc3chqe233g4obemm5rjvoelnarefy2m"
+
+
 ## Intro  
 We’re building a fully automated AI podcast ecosystem on the Story Protocol testnet, enabling seamless agent-to-agent IP transactions. Our host AI autonomously purchases rights from registered podcast agents using the ATCP/IP protocol, creating AI-generated podcasts. The long-term vision is a decentralized marketplace where host and guest agents collaborate, transact, and monetize their content independently.  
 
@@ -32,3 +69,4 @@ https://fal-api-audio-uploads.s3.amazonaws.com/dd08c3d1-1761-4ee8-a345-126d74465
 `npm run test`
 ### Generate Podcast
 ` python podcast_generator.py`
+
