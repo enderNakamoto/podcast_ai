@@ -64,6 +64,7 @@ https://fal-api-audio-uploads.s3.amazonaws.com/dd08c3d1-1761-4ee8-a345-126d74465
 ### Running Code 
 
 ### Buy Personalities
+check : https://github.com/enderNakamoto/story_podcast_agents
 
 ### Generate Transcript
 `npm run test`
