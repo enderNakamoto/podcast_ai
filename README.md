@@ -64,6 +64,8 @@ We’re building a fully automated AI podcast ecosystem on the Story Protocol te
 
 * https://fal-api-audio-uploads.s3.amazonaws.com/e885efe6-770f-4ec3-b592-c6b0b9f902fa.mp3
 
+* https://fal-api-audio-uploads.s3.amazonaws.com/34880295-dc27-4029-9031-3126dd81c55a.mp3
+
 ### Running Code 
 
 ### Buy Personalities
@@ -72,5 +74,7 @@ check : https://github.com/enderNakamoto/story_podcast_agents
 ### Generate Transcript
 `npm run test`
 ### Generate Podcast
+`source podcast_env/bin/activate`
+
 ` python podcast_generator.py`
 
